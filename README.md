@@ -35,9 +35,15 @@ I did Hyperparameter tunning, with result as the following:
 
 The tunning results improved the model to Recall Score of 0.88
 
+HOME
 ![Screenshot](2021-04-13_020630.png)
+ABOUT ME
 ![Screenshot](2021-04-13_020858.png)
+QUICK EDA SUMMARY
 ![Screenshot](2021-04-13_020940.png)
+DATA SET
 ![Screenshot](2021-04-13_021010.png)
+PREDICTING FORM
 ![Screenshot](2021-04-13_021040.png)
+PREDICT RESULT
 ![Screenshot](2021-04-13_021110.png)
