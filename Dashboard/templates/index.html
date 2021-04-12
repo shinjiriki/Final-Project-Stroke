@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Health - Medical Website Template</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" />
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}" />
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css') }}" />
+     <link rel="stylesheet" href="{{ url_for('static', filename='css//owl.theme.default.min.css') }}" />
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/tooplate-style.css') }}" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- HEADER -->
+     <header>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-5">
+                         <p>Welcome to a Purwadhika Stroke Center</p>
+                    </div>
+                         
+                    <div class="col-md-8 col-sm-7 text-align-right">
+                         <span class="phone-icon"><i class="fa fa-phone"></i>021 5050 1361 <br></span>
+                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 19:00 PM - 10:00 PM (Mon-Thur) / 9:00 AM - 16:00 PM (Sun)</span>
+                         <span class="email-icon"><i class="fa fa-envelope-o"></i>purwadhika@bootcamp.com</span>
+                    </div>
+
+               </div>
+          </div>
+     </header>
+
+
+     <!-- MENU -->
+     <section class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#top" class="smoothScroll">Home</a></li>
+                         <li><a href="#about" class="smoothScroll">About Me</a></li>
+                         <li><a href="#news" class="smoothScroll">Exploratory Data Analysis</a></li>
+                         <li><a href="#data" class="smoothScroll">Data</a></li>
+                         <li class="appointment-btn"><a href="#appointment">Predict</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+     <!-- HOME -->
+     <section id="home" class="slider" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                         <div class="owl-carousel owl-theme">
+                              <div class="item item-first">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>Let's make your life happier</h3>
+                                             <h1>Healthy Living</h1>
+                                             <a href="#team" class="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="item item-second">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>Aenean luctus lobortis tellus</h3>
+                                             <h1>New Lifestyle</h1>
+                                             <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More About Us</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="item item-third">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>Pellentesque nec libero nisi</h3>
+                                             <h1>Your Health Benefits</h1>
+                                             <a href="#news" class="section-btn btn btn-default btn-blue smoothScroll">Read Stories</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- ABOUT -->
+     <section id="about">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-6">
+                         <div class="about-info">
+                              <h2 class="wow fadeInUp" data-wow-delay="0.6s">A Summary About Myself</h2>
+                              <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                   <p style="font-size: 30px; color: black;">Hanya seorang pria lulusan Universitas Gunadarma yang bercita-cita menjadi seorang Data Scientist yang bisa diandalkan</p>
+                                   <p style="font-size: 30px; color: black;">Dengan mengikuti Bootcamp Purwadhika selama hampir 6 bulan, ini menjadi project penentuan kelulusannya.</p>
+                              </div>
+                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
+                                   <img src="{{ url_for('static', filename='images/about-me.jpg') }}" class="img-responsive" alt="">
+                                   <figcaption>
+                                        <h3>Shinjiriki</h3>
+                                        <p>Upcoming Data Scientist</p>
+                                   </figcaption>
+                              </figure>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+     <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Apa itu Stroke?</h4>
+              </div>
+              <div class="modal-body">
+               <h3><BLOCKQUOTE>Stroke adalah kondisi yang terjadi ketika pasokan darah ke otak terganggu atau berkurang akibat penyumbatan (stroke iskemik) atau pecahnya pembuluh darah (stroke hemoragik). Tanpa darah, otak tidak akan mendapatkan asupan oksigen dan nutrisi, sehingga sel-sel pada sebagian area otak akan mati. Kondisi ini menyebabkan bagian tubuh yang dikendalikan oleh area otak yang rusak tidak dapat berfungsi dengan baik.</BLOCKQUOTE>
+                    <BLOCKQUOTE>Stroke adalah kondisi gawat darurat yang perlu ditangani secepatnya, karena sel otak dapat mati hanya dalam hitungan menit. Tindakan penanganan yang cepat dan tepat dapat meminimalkan tingkat kerusakan otak dan mencegah kemungkinan munculnya komplikasi.</h3></BLOCKQUOTE>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="myModal2" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Is it True that smoking affect the chance of getting Stroke?</h4>
+              </div>
+              <div class="modal-body">
+               <img src="{{ url_for('static', filename='images/plot_smoking.png') }}" class="img-responsive" alt="">
+               <br>
+               <img style="display: block;margin-left: auto;margin-right: auto;" src="{{ url_for('static', filename='images/plot_smoking_percent.png') }}" class="img-responsive" alt="">
+               <BLOCKQUOTE>People who smokes (either formerly or active), has a higher chance to get a Stroke. As for why the percent 
+                    difference between people smoke actively smokes and who doesn't is small, was because people who didn't 
+                    smoke might still have other factors like what was explained above, like overweight, high blood pressure, etc.
+                    But this won't deny the fact that people that smokes/d are prone to Stroke than who doesn't.</BLOCKQUOTE>
+               <BLOCKQUOTE>But Surpringly, people who quit smoking get a higher chance of Stroke than people who is still actively smoking</BLOCKQUOTE>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="myModal3" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">What's the relation between working and stroke?</h4>
+              </div>
+              <div class="modal-body">
+               <img src="{{ url_for('static', filename='images/plot_working.png') }}" class="img-responsive" alt="">
+               <br>
+               <img style="display: block;margin-left: auto;margin-right: auto;" src="{{ url_for('static', filename='images/plot_working_percent.png') }}" class="img-responsive" alt="">
+              <blockquote>There's a quick note that I need to point out, that here we didn't see the 'never worked' section, that's because there's no stroke in that category.
+
+               People who are self-employed are more prone to getting a Stroke rather than working a in private section or
+               govt job and of course children. <br>
+               BUT do working affects the risk of getting a Stroke?<br>
+               Well yes. According to BBC, Working long hours is linked to an increased risk of stroke.
+               Long hours were defined in the French study as more than 10 hours on at least 50 days per year.
+               People who did long hours for more than a decade were at the greatest risk of stroke, they suggest.
+               <br>Source : https://news.gallup.com/poll/122510/self-employed-workers-clock-hours-week.aspx</blockquote>
+               <img src="{{ url_for('static', filename='images/data_working.png') }}" class="img-responsive" alt="">
+               <blockquote>Note : Hours by Week.<br>
+                    Private and Goverment usually works more in between 35-44hours a week which could be calculated as 
+                    7-8 hours a day, as for self-employed are more often working above 44hours a week which would be
+                    9 hours above a day. Which explains why there's more self-employed people who's more prone to
+                    Stroke diseases than who work in a company or with government.</blockquote>
+          </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+     <!-- NEWS -->
+     <section id="news" data-stellar-background-ratio="2.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <!-- SECTION TITLE -->
+                         <div style="padding-bottom: 50px;" class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                              <h2>What do you want to know?</h2>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- NEWS THUMB -->
+                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
+                              <a data-toggle="modal" href="#myModal">
+                                   <img src="{{ url_for('static', filename='images/header-1.jpg') }}" class="img-responsive" alt="">
+                              </a>
+                              <div class="news-info">
+                                   <span>A Quick Summary about Stroke</span>
+                                   <a data-toggle="modal" href="#myModal"><h3>What is a Stroke?</h3></a>
+                                   <p>Here you will know a bit about Stroke and why should it concern you.</p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- NEWS THUMB -->
+                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
+                              <a data-toggle="modal" href="#myModal2">
+                                   <img src="{{ url_for('static', filename='images/header-2.jpg') }}" class="img-responsive" alt="">
+                              </a>
+                              <div class="news-info">
+                                   <span>Statistic for Smoking and Stroke</span>
+                                   <h3><a data-toggle="modal" href="#myModal2">Is Smoking really affect the chances of getting Stroke?</a></h3>
+                                   <p>What's the relation between smoking and stroke?</p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- NEWS THUMB -->
+                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
+                              <a data-toggle="modal" href="#myModal3">
+                                   <img src="{{ url_for('static', filename='images/header-3.jpg') }}" class="img-responsive" alt="">
+                              </a>
+                              <div class="news-info">
+                                   <span>Statistic for Working and Stroke</span>
+                                   <h3><a data-toggle="modal" href="#myModal3">Work, Work, and Work</a></h3>
+                                   <p>How is working really affect the chances of you getting a stroke?</p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+     <section id="data" data-stellar-background-ratio="3">
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                         <!-- SECTION TITLE -->
+                         <div style="padding-top: 50px;" class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                              <h2>HERE'S THE FULL DATASET</h2>
+                         </div>
+                    </div>
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT2IbIV9dA3v-tyDDAf99bCzNzyTZIuc80RW9vlo4xUbGqmzMqp7pQqDAWyjG84d6PkqsUeGFg7BxLg/pubhtml?gid=1837988548&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+               </div>
+          </div>
+     </section>
+
+     <!-- MAKE AN APPOINTMENT -->
+     <section id="appointment" data-stellar-background-ratio="3">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-6">
+                         <img src="images/appointment-image.jpg" class="img-responsive" alt="">
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                         <!-- CONTACT FORM HERE -->
+                         <form id="appointment-form" role="form" method="POST" action='http://127.0.0.1:5000/' >
+
+                              <!-- SECTION TITLE -->
+                              <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                                   <h2>FILL IN YOUR DATA</h2>
+                              </div>
+
+                              <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="name">Your Age</label>
+                                        <input type="number" class="form-control" name="age" step = '1' min ='0' max = '85' placeholder="input age" required/>
+                                   </div>
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="select">What gender are you</label>
+                                        <select class="form-control" name="gender">
+                                             <option value="Male">Male</option>
+                                             <option value="Female">Female</option>
+                                        </select>
+                                   </div>
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="select">Do you have a normal blood pressure?</label>
+                                        <select class="form-control" id="blood pressure" name="blood pressure">
+                                             <option value=0>Yes, I have a normal blood pressure </option>
+                                             <option value=1>No, I have high blood pressure</option>
+                                        </select>
+                                   </div>
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="select">Do you have any history towards Heart Disease?</label>
+                                        <select class="form-control" id="heart disease" name="heart disease">
+                                             <option value=1>Yes, I have a heart disease</option>
+                                             <option value=0>No, my heart is fine</option>
+                                        </select>
+                                   </div>
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="select">Are you married?</label>
+                                        <select class="form-control" id="married" name="married">
+                                             <option value='Yes'>Yes</option>
+                                             <option value='No'>No</option>
+                                        </select>
+                                   </div>
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="select">Do you live in Rural or Urban areas?</label>
+                                        <select class="form-control" id="residence type" name="residence type">
+                                             <option value='Urban'>Urban</option>
+                                             <option value='Rural'>Rural</option>
+                                        </select>
+                                   </div>
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="select">Are you still smoking?</label>
+                                        <select class="form-control" id="smoking status" name="smoking status">
+                                             <option value="Unknown">Prefer not to tell</option>
+                                             <option value="formerly smoked">Already Quit Smoking</option>
+                                             <option value="smokes">Still Active Smoking</option>
+                                             <option value="never smoked">Never Smoke</option>
+                                        </select>
+                                   </div>
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="select">What kind of job are you having?</label>
+                                        <select class="form-control" id="type of work" name="type of work">
+                                             <option value="Private">Private Company</option>
+                                             <option value="Self-employed">Self Employed</option>
+                                             <option value="Govt_job">Government Job</option>
+                                             <option value="children">Children</option>
+                                             <option value="Never_worked">Never Worked</option>
+                                        </select>
+                                   </div>
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="name">Your Average Glucose Level</label>
+                                        <input type="number" class="form-control" name="average glucose level" step = '0.01' min ='55.00' max = '220.00' placeholder="input average glucose level" required/>
+                                   </div>
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="name">Your BMI</label>
+                                        <input type="number" class="form-control" name="bmi" step = '0.1' min ='8.0' max = '100.0' placeholder="input bmi" required/>
+                                   </div>
+                                   <div class="col-md-12 col-sm-12">
+                                        <button data-toggle="modal" data-target="#result" type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
+                                   </div>
+                              </div>
+                        </form>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+     <center>
+          <br>
+          <h2 class='display-4'><strong>Are you prone to Stroke? </strong><span class='badge badge-secondary'><h2>{{pred}}</h2></span></h2>
+          <h2 class='display-4'><strong>Your Probability of getting one is : </strong><span class='badge badge-secondary'><h2>{{prob}}</h2></span></h2>
+      </center>
+     <!-- FOOTER -->
+     <footer data-stellar-background-ratio="5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">About Purwadhika</h4>
+                              <p>
+                                   Purwadhika Digital Technology School adalah salah satu pionir lembaga pendidikan di Indonesia yang memiliki fokus di dunia 
+                                   pendidikan teknologi digital. Perjalanan panjang selama 32 tahun telah menjadi bukti dari komitmen kami untuk selalu 
+                                   melakukan yang terbaik. Terbaik dari segalanya, terbaik dari siapapun.</p>
+
+                              <div class="contact-info">
+                                   <p><i class="fa fa-phone"></i>021 5012 3161 (BSD)</p>
+                                   <p><i class="fa fa-phone"></i>021 5050 1361 (JKT)</p>
+                                   <p><i class="fa fa-phone"></i>0813 1867 8671</p>
+                                   <p><i class="fa fa-phone"></i>0812 8060 7160</p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Special Thanks to</h4>
+                              <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src="{{ url_for('static', filename='images/Female.jpg') }}" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#"><h5>Kak Brigitta</h5></a>
+                                        <span>Modul 3</span>
+                                   </div>
+                              </div>
+
+                              <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src="{{ url_for('static', filename='images/Male.jpg') }}" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#"><h5>Kak Achmad</h5></a>
+                                        <span>Modul 1 dan Modul 2</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb">
+                              <div class="opening-hours">
+                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Data Science After Hour</h4>
+                                   <p>Monday - Thursday <span>19:00 pM - 10:00 PM</span></p>
+                                   <p>Sunday <span>09:00 AM - 16:00 PM</span></p>
+                              </div> 
+
+                              <ul class="social-icon">
+                                   <li><a href="https://www.facebook.com/purwadhikadigitalschool/" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="https://twitter.com/purwadhikaclass?lang=en" class="fa fa-twitter"></a></li>
+                                   <li><a href="https://www.instagram.com/purwadhikaschool/?hl=en" class="fa fa-instagram"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 border-top">
+                         <div class="col-md-4 col-sm-6">
+                              <div class="copyright-text"> 
+                                   <p>Copyright &copy; 2021 Purwadhika 
+                                   
+                                   | Design by : Tooplate</p>
+                              </div>
+                         </div>
+                         <div class="col-md-2 col-sm-2 text-align-center">
+                              <div class="angle-up-btn"> 
+                                  <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
+                              </div>
+                         </div>   
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+     <!-- SCRIPTS -->
+     <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/jquery.stellar.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/smoothscroll.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>
